@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+.divider {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.black-button {
+  border-radius: 46px;
+  width: 95px;
+  height: 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+}
+.black-button:hover { background-color: rgba(0, 0, 0, 0.85); }
+.black-large-full-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 46px;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+}
+.black-large-full-button:hover { background-color: rgba(0, 0, 0, 0.85); }
+.white-button {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 46px;
+  width: 93px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+}
+.white-button:hover { background-color: rgba(0, 0, 0, 0.05); }
+.icon-box {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.disable-button {
+  border-radius: 46px;
+  width: 95px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: not-allowed;
+}
+
+.icon-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50% 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.eye-light-off-icon {
+  background-image: url(assets/image/eye-light-off.png);
+}
+
+.eye-light-on-icon {
+  background-image: url(assets/image/eye-light-on.png);
+}
+
+.expand-right-light-icon {
+  background-image: url(assets/image/expand-right-light.png);
+}
+
+.expand-home-icon {
+  background-image: url(assets/image/expand-home-icon.png);
+}
+
+.logo-light-icon {
+  background-image: url(assets/image/logo-light.png);
+}
+
+.insta-icon {
+  background-image: url(assets/image/insta.png);
+}
+
+.naver-blog-icon {
+  background-image: url(assets/image/naver-blog.png);
+}
+
+.logo-dark-icon {
+  background-image: url(assets/image/logo-dark.png);
+}
+
+.search-light-icon {
+  background-image: url(assets/image/search-light.png);
+}
+
+.check-round-fill-icon {
+  background-image: url(assets/image/check-round-fill.png);
+}
+
+.check-ring-light-icon {
+  background-image: url(assets/image/check-ring-light.png);
+}
+
+.image-box-light-icon {
+  background-image: url(assets/image/image-box-light.png);
+}
+
+.close-icon {
+  background-image: url(assets/image/close.png);
 }
