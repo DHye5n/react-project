@@ -27,7 +27,7 @@ export default function BoardWrite() {
     const [ cookies, setCookies ] = useCookies();
 
     // state: 게시물 이미지 미리보기 url 상태
-    const [imageUrls, setImageUrls] = useState<string[]>([]);
+    const [ imageUrls, setImageUrls] = useState<string[]>([]);
 
     // function: 네비게이트 함수
     const navigate = useNavigate();
