@@ -1,0 +1,20 @@
+server:
+  port: 9005
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/reactProject?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 626512
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 110MB
+
+secret-key: S3cr3tK3y;
+
+file:
+  path: C:/fileUpload/
+  url: http://localhost:9005/file
