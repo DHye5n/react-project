@@ -4,6 +4,7 @@ import useBoardStore from '../../../stores/board.store';
 import {useNavigate} from 'react-router-dom';
 import {MAIN_PATH} from '../../../constant';
 import {useCookies} from 'react-cookie';
+import {useLoginUserStore} from "../../../stores";
 
 // component: 게시물 작성 컴포넌트
 export default function BoardWrite() {
@@ -22,7 +23,6 @@ export default function BoardWrite() {
     const { resetBoard } = useBoardStore();
 
 
-
     // state: 쿠키 상태
     const [ cookies, setCookies ] = useCookies();
 
@@ -31,6 +31,8 @@ export default function BoardWrite() {
 
     // function: 네비게이트 함수
     const navigate = useNavigate();
+
+
 
     // event handler: 제목 변경 이벤트 처리
     const onTitleChangeHandler = (event: ChangeEvent<HTMLTextAreaElement>) => {
@@ -54,6 +56,7 @@ export default function BoardWrite() {
     const onImageChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
         if (!event.target.files || !event.target.files.length) return;
         const file = event.target.files[0];
+
         const imageUrl = URL.createObjectURL(file);
         const newImageUrls = imageUrls.map(item => item);
         newImageUrls.push(imageUrl);
@@ -115,7 +118,7 @@ export default function BoardWrite() {
                     { imageUrls.map((imageUrl, index) =>
                         <div className='board-write-images-box'>
                             <div className='board-write-image-box'>
-                                <img className='board-write-image' src={imageUrl} />
+                                <img className='board-write-image' src= {imageUrl} />
                                 <div className='icon-button image-close' onClick={() => onImageCloseButtonClickHandler(index)}>
                                     <div className='icon close-icon'></div>
                                 </div>
